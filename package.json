@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@rongcloud/engine": "^5.6.0",
+    "@rongcloud/imlib-next": "^5.6.0",
+    "vk-uview-ui": "^1.4.0"
+  }
+}

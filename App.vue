@@ -1,5 +1,9 @@
 <script>
+	import IM from "./services/im.js";
 	export default {
+		globalData: {
+			IM
+		},
 		onLaunch: function() {
 			console.log('App Launch')
 		},
@@ -12,6 +16,7 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
+	@import "./uni_modules/vk-uview-ui/index.scss";
 	/*每个页面公共css */
 </style>

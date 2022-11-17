@@ -1,5 +1,10 @@
 import App from './App'
 
+import uView from './uni_modules/vk-uview-ui';
+
+
+console.log(uView)
+
 // #ifndef VUE3
 import Vue from 'vue'
 Vue.config.productionTip = false
@@ -14,8 +19,9 @@ app.$mount()
 import { createSSRApp } from 'vue'
 export function createApp() {
   const app = createSSRApp(App)
+  app.use(uView)
   return {
-    app
+    app	
   }
 }
 // #endif
