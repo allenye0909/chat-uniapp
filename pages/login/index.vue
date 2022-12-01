@@ -13,6 +13,9 @@
 	} from "vue"
 	import config from "@/config.js"
 	export default {
+		onLoad() {
+
+		},
 
 		setup(props, context) {
 			// // 透传 Attributes（非响应式的对象，等价于 $attrs）
@@ -30,7 +33,6 @@
 			const state = reactive({
 				user: config.user
 			})
-
 			const navigateTo = () => {
 				const {
 					appkey,
@@ -44,7 +46,8 @@
 
 			return {
 				...toRefs(state),
-				navigateTo
+				navigateTo,
+				test: 2
 			}
 		}
 	}

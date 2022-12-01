@@ -16,6 +16,18 @@
 
 @import "@/uni_modules/vk-uview-ui/theme.scss";
 
+.clearfix{
+	overflow: hidden;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
 /* 行为相关颜色 */
 $uni-color-primary: #007aff;
 $uni-color-success: #4cd964;
